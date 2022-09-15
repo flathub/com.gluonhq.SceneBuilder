@@ -44,6 +44,7 @@
         <li>MacOS: avoid hiding SceneBuilder menu bar with FXML menu bar when useSystemMenuBar property is enabled</li>
       </ul>
     </description>
+    </release>
   </releases>
   
   <categories>
