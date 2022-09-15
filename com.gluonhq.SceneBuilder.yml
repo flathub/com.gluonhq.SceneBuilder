@@ -1,31 +1,43 @@
 app-id: com.gluonhq.SceneBuilder
 runtime: org.freedesktop.Platform
-runtime-version: "22.08"
+runtime-version: "21.08"
 sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.openjdk17
 command: SceneBuilder-runner
-rename-desktop-file: scenebuilder-SceneBuilder.desktop
+rename-desktop-file: SceneBuilder.desktop
 finish-args:
   - --socket=x11
   - --share=ipc
   - --share=network
+  - --device=dri
   - --persist=.scenebuilder
   - --filesystem=home
 modules:
+
+  - name: openjdk
+    buildsystem: simple
+    build-commands:
+      - /usr/lib/sdk/openjdk17/install.sh
+
   - name: SceneBuilder
     buildsystem: simple
     build-commands:
     - mkdir -p deb-package
     - ar p SceneBuilder.deb data.tar.xz | tar -xJf - -C deb-package
-    - mv deb-package/opt/scenebuilder /app
+    - install -Dm755 deb-package/opt/scenebuilder/lib/app/*.jar /app/lib/SceneBuilder.jar
+    - install -Dm755 deb-package/opt/scenebuilder/lib/scenebuilder-SceneBuilder.desktop /app/lib/SceneBuilder.desktop
+    - unzip -q -j -d sdk sdk.zip '*lib/*'
+    - mv sdk /app/lib/sdk
     - install -Dm755 SceneBuilder-runner /app/bin/SceneBuilder-runner
     - install -Dm644 com.gluonhq.SceneBuilder.metainfo.xml -t /app/share/metainfo/
     - install -Dm644 com.gluonhq.SceneBuilder.256.png /app/share/icons/hicolor/256x256/apps/com.gluonhq.SceneBuilder.png
     - install -Dm644 com.gluonhq.SceneBuilder.128.png /app/share/icons/hicolor/128x128/apps/com.gluonhq.SceneBuilder.png
-    - desktop-file-edit --remove-key=Categories /app/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
-    - desktop-file-edit --set-key=Categories --set-value='Development' /app/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
-    - desktop-file-edit --set-icon=com.gluonhq.SceneBuilder /app/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
-    - desktop-file-edit --set-key=Exec --set-value='SceneBuilder-runner' /app/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
-    - desktop-file-install /app/scenebuilder/lib/scenebuilder-SceneBuilder.desktop --dir=/app/share/applications
+    - desktop-file-edit --remove-key=Categories /app/lib/SceneBuilder.desktop
+    - desktop-file-edit --set-key=Categories --set-value='Development' /app/lib/SceneBuilder.desktop
+    - desktop-file-edit --set-icon=com.gluonhq.SceneBuilder /app/lib/SceneBuilder.desktop
+    - desktop-file-edit --set-key=Exec --set-value='SceneBuilder-runner' /app/lib/SceneBuilder.desktop
+    - desktop-file-install /app/lib/SceneBuilder.desktop --dir=/app/share/applications
 
     sources:
     - type: file
@@ -39,6 +51,18 @@ modules:
           timestamp-query: .published_at
           url-query: .assets[] | select(.name=="SceneBuilder-" + $version + ".deb") | .browser_download_url
     - type: file
+      dest-filename: sdk.zip
+      url: https://download2.gluonhq.com/openjfx/19/openjfx-19_linux-x64_bin-sdk.zip
+      sha256: 7c4f4852dd1bdd2b6ed7b152445e8f1d35a7329f7eca46000b661acf7cb212d0
+      only-arches:
+        - x86_64
+    - type: file
+      dest-filename: sdk.zip
+      url: https://download2.gluonhq.com/openjfx/19/openjfx-19_linux-aarch64_bin-sdk.zip
+      sha256: aa993e5e923916368bee1b4a8b35b7efa38fb51a2a611f13ee6cb2405ea37337
+      only-arches:
+        - aarch64
+    - type: file
       path: com.gluonhq.SceneBuilder.metainfo.xml 
     - type: file
       path: com.gluonhq.SceneBuilder.256.png
@@ -47,6 +71,6 @@ modules:
     - type: script
       dest-filename: SceneBuilder-runner
       commands:
-          - exec /app/scenebuilder/bin/SceneBuilder
+          - exec /app/jre/bin/java --module-path /app/lib/sdk --add-modules javafx.web,javafx.fxml,javafx.swing,javafx.media --add-opens=javafx.fxml/javafx.fxml=ALL-UNNAMED -cp /app/lib/SceneBuilder.jar com.oracle.javafx.scenebuilder.app.SceneBuilderApp
  
    
