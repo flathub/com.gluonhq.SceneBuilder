@@ -37,7 +37,7 @@ modules:
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
           version-query: .tag_name
           timestamp-query: .published_at
-          url-query: .assets[] | select(.name=="SceneBuilder-$version.deb") | .browser_download_url
+          url-query: .assets[] | select(.name=="SceneBuilder-" + $version + ".deb") | .browser_download_url
     - type: file
       path: com.gluonhq.SceneBuilder.metainfo.xml 
     - type: file
