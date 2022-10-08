@@ -31,6 +31,17 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2022-10-08" version="19.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/19.0.0</url>
+      <description>
+        <ul>
+          <li>Use Java and JavaFX 19</li>
+          <li>Use Xvfb display</li>
+          <li>Use Xvfb display in kit-bundle workflow</li>
+          <li>Add workflow for M1 and bump versions</li>
+        </ul>
+      </description>
+    </release>
     <release date="2022-04-01" version="18.0.0">
     <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/18.0.0</url>
     <description>
