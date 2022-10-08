@@ -35,7 +35,6 @@
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/19.0.0</url>
       <description>
         <ul>
-          <li>Use Java and JavaFX 19</li>
           <li>Use Xvfb display</li>
           <li>Use Xvfb display in kit-bundle workflow</li>
           <li>Add workflow for M1 and bump versions</li>
