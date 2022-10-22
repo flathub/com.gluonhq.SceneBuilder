@@ -4,8 +4,8 @@ Flatpak for [Scene Builder](https://gluonhq.com/products/scene-builder)
 ## Prerequisite
 
 - `flatpak`, `flatpak-builder` packages
-- Runtime `org.freedesktop.Platform` version `21.08`
-- Runtime `org.freedesktop.Sdk` version `21.08`
+- Runtime `org.freedesktop.Platform` version `22.08`
+- Runtime `org.freedesktop.Sdk` version `22.08`
 - Runtime Extension `org.freedesktop.Sdk.Extension.openjdk17`
 
 ### Build and install Scene Builder
