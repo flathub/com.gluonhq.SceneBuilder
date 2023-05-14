@@ -3,7 +3,7 @@ runtime: org.freedesktop.Platform
 runtime-version: '22.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
-  - org.freedesktop.Sdk.Extension.openjdk17
+  - org.freedesktop.Sdk.Extension.openjdk
 command: SceneBuilder-runner
 rename-desktop-file: SceneBuilder.desktop
 finish-args:
@@ -18,7 +18,7 @@ modules:
   - name: openjdk
     buildsystem: simple
     build-commands:
-      - /usr/lib/sdk/openjdk17/install.sh
+      - /usr/lib/sdk/openjdk/install.sh
 
   - name: SceneBuilder
     buildsystem: simple
@@ -43,8 +43,8 @@ modules:
     sources:
       - type: file
         dest-filename: SceneBuilder.deb
-        url: https://github.com/gluonhq/scenebuilder/releases/download/19.0.0/SceneBuilder-19.0.0.deb
-        sha256: 1f1e9d8da19ec5d5ffeae60a783035ec2e887dc8eb0b1e17a20e2fd56e5ea8fb
+        url: https://github.com/gluonhq/scenebuilder/releases/download/20.0.0/SceneBuilder-20.0.0.deb
+        sha256: 5c5ef819a41e9412342d81863384c09f7045175d6a8c7d0942182d278c1fd523
         x-checker-data:
           type: json
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
@@ -54,14 +54,14 @@ modules:
             | .browser_download_url
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/20/openjfx-20_linux-x64_bin-sdk.zip
-        sha256: e6f46a3ab04b735100df4dcca0c0b31cf476014f988e32b96922d679298ae69a
+        url: https://download2.gluonhq.com/openjfx/20.0.1/openjfx-20.0.1_linux-x64_bin-sdk.zip
+        sha256: 882082b01a7f46792074cbe58e90136b81413438de184a941e051b836cbe90a2
         only-arches:
           - x86_64
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/20/openjfx-20_linux-aarch64_bin-sdk.zip
-        sha256: e87e04b5370c9460f196b16b4d7a1a880336bb2b85c39339c9c180b58cb8548e
+        url: https://download2.gluonhq.com/openjfx/20.0.1/openjfx-20.0.1_linux-aarch64_bin-sdk.zip
+        sha256: ded4555c2fa097b3c0307ed3b338956ea1052d1693864c7594ec7ebb7e9486e2
         only-arches:
           - aarch64
       - type: file
