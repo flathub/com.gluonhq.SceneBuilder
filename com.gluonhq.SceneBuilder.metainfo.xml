@@ -31,6 +31,17 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2023-05-08" version="20.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/20.0.0</url>
+      <description>
+        <ul>
+          <li>JRuby controller skeleton generation</li>
+          <li>Link to JFX-Central in menu Help/JavaFX</li>
+          <li>Use Java 20</li>
+          <li>Use JavaFX 20</li>
+        </ul>
+      </description>
+    </release>
     <release date="2022-10-08" version="19.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/19.0.0</url>
       <description>
