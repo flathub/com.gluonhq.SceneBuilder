@@ -31,6 +31,16 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2023-10-05" version="21.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/21.0.0</url>
+      <description>
+        <ul>
+          <li>Clean up DocumentWatchingController</li>
+          <li>Use Java 21</li>
+          <li>Use JavaFX 21</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-05-08" version="20.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/20.0.0</url>
       <description>
