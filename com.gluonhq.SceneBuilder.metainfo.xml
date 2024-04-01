@@ -31,6 +31,17 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2024-03-22" version="22.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/22.0.0</url>
+      <description>
+        <ul>
+          <li>Enables Scene Builder to provide Insets editor for custom controls</li>
+          <li>Colorpicker move on input</li>
+          <li>Use Java 22</li>
+          <li>Use JavaFX 22</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-10-05" version="21.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/21.0.0</url>
       <description>
