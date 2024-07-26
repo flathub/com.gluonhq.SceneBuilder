@@ -8,7 +8,7 @@
   <launchable type="desktop-id">com.gluonhq.SceneBuilder.desktop</launchable>
   <content_rating type="oars-1.1"/>
   
-  <summary>Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.</summary>
+  <summary>Design JavaFX user interfaces</summary>
   <description>
     <p>Integrated: Scene Builder works with the JavaFX ecosystem - official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.</p>
     <p>Simple: Drag 'n' Drop user interface design allows for rapid iteration. Separation of design and logic files allows for team members to quickly and easily focus on their specific layer of application development.</p> 
@@ -26,12 +26,24 @@
     </screenshot> 
   </screenshots>
   
+  <launchable type="desktop-id">com.gluonhq.SceneBuilder.desktop</launchable>
   <url type="homepage">https://gluonhq.com/products/scene-builder/</url>
   <url type="help">https://github.com/gluonhq/scenebuilder/wiki</url>
   <url type="bugtracker">https://github.com/gluonhq/scenebuilder/issues</url>
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2024-03-22" version="22.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/22.0.0</url>
+      <description>
+        <ul>
+          <li>Enables Scene Builder to provide Insets editor for custom controls</li>
+          <li>Colorpicker move on input</li>
+          <li>Use Java 22</li>
+          <li>Use JavaFX 22</li>
+        </ul>
+      </description>
+    </release>
     <release date="2023-10-05" version="21.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/21.0.0</url>
       <description>
