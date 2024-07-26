@@ -7,7 +7,7 @@
   <developer_name>Gluon HQ</developer_name>
   <content_rating type="oars-1.1"/>
   
-  <summary>Scene Builder is an open source tool that allows for drag and drop design of JavaFX user interfaces.</summary>
+  <summary>Drag and drop design of JavaFX user interfaces.</summary>
   <description>
     <p>Integrated: Scene Builder works with the JavaFX ecosystem - official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.</p>
     <p>Simple: Drag 'n' Drop user interface design allows for rapid iteration. Separation of design and logic files allows for team members to quickly and easily focus on their specific layer of application development.</p> 
