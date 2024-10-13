@@ -32,6 +32,17 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2024-09-24" version="23.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/23.0.0</url>
+      <description>
+        <ul>
+          <li>Enabled loading of FXML files via drag and drop to Welcome Dialog</li>
+          <li>add zh_CN translation to app module</li>
+          <li>Use Java 23</li>
+          <li>Use JavaFX 23</li>
+        </ul>
+      </description>
+    </release>
     <release date="2024-03-22" version="22.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/22.0.0</url>
       <description>
