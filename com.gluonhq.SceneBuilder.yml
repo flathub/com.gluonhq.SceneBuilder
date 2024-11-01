@@ -43,8 +43,8 @@ modules:
     sources:
       - type: file
         dest-filename: SceneBuilder.deb
-        url: https://github.com/gluonhq/scenebuilder/releases/download/23.0.0/SceneBuilder-23.0.0.deb
-        sha256: b19b6fecc3629d53a612668ad345c6d015df75e08e219ed56675f5fdfdded014
+        url: https://github.com/gluonhq/scenebuilder/releases/download/23.0.1/SceneBuilder-23.0.1.deb
+        sha256: 3352a1f1fd44a3940147f7980c445f522efab677b9f8f47ddb94f91cd616ce1a
         x-checker-data:
           type: json
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
@@ -54,14 +54,14 @@ modules:
             | .browser_download_url
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/22/openjfx-22_linux-x64_bin-sdk.zip
-        sha256: 71f85ca4b0a978af2c9e49fc00fb724a4a8342a5721d1d284ba6a613ca935637
+        url: https://download2.gluonhq.com/openjfx/23.0.1/openjfx-23.0.1_linux-x64_bin-sdk.zip
+        sha256: 9ba7e61802029e41a9526ec9a98533b6f543fa508fbae7d548886d8ae7100349
         only-arches:
           - x86_64
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/22/openjfx-22_linux-aarch64_bin-sdk.zip
-        sha256: b31116713ae614bd91aa28d3a6cfdb237a15ed9bdb826b027824ca7cf49cd948
+        url: https://download2.gluonhq.com/openjfx/23.0.1/openjfx-23.0.1_linux-aarch64_bin-sdk.zip
+        sha256: 53c947dd39183f8fbaeeaffc946e68f1fcbde9770e60986aad19350bf845b3d4
         only-arches:
           - aarch64
       - type: file
