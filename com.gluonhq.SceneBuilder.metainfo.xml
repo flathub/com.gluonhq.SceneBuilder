@@ -32,6 +32,35 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2025-03-27" version="24.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/24.0.0</url>
+      <description>
+        <ul>
+          <li>Remove deprecated API from JavaFX 23</li>
+          <li>ESC key selects parent of selected node</li>
+          <li>Added missing Japanese translations</li>
+          <li>Added missing Chinese translations</li>
+          <li>Remove/Update Kit third-party dependencies</li>
+          <li>publish Kit snapshot to sonatype</li>
+          <li>Add ModuleExplorer to explore custom controls in modules</li>
+          <li>Add missing module to kit and update versions</li>
+          <li>Constructor is now public (required for instantiation via FXML, issue 731).</li>
+          <li>xdg-open is now used to reveal a file Linux file system (#674)</li>
+          <li>Remove imports from css and use a list of stylesheets instead</li>
+          <li>Remove platform theme url from stylesheets,</li>
+          <li>Deploy locally before releasing with JReleaser</li>
+          <li>Add deploy step to release job</li>
+          <li>add optional modules to kit</li>
+          <li>Restore back removed metadata for DialogPane</li>
+          <li>add missing css rule to hierarchy panel</li>
+          <li>Fix NPE in accordion</li>
+          <li>Prevent css parsing if any style textfield is empty</li>
+          <li>Force refresh of theme and stylesheets when swatch color changes</li>
+          <li>Update PreviewWindowController to prevent exception</li>
+          <li>Prevents CTRL+P from being masked</li>
+        </ul>
+      </description>
+    </release>
     <release date="2024-09-24" version="23.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/23.0.0</url>
       <description>

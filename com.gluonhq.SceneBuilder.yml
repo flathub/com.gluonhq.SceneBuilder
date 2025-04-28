@@ -24,7 +24,7 @@ modules:
     buildsystem: simple
     build-commands:
       - mkdir -p deb-package
-      - ar p SceneBuilder.deb data.tar.xz | tar -xJf - -C deb-package
+      - ar p SceneBuilder.deb data.tar.zst | tar --use-compress-program=unzstd -xf - -C deb-package
       - install -Dm755 deb-package/opt/scenebuilder/lib/app/*.jar /app/lib/SceneBuilder.jar
       - install -Dm755 deb-package/opt/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
         /app/lib/SceneBuilder.desktop
@@ -54,14 +54,14 @@ modules:
             | .browser_download_url
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/23.0.1/openjfx-23.0.1_linux-x64_bin-sdk.zip
-        sha256: 9ba7e61802029e41a9526ec9a98533b6f543fa508fbae7d548886d8ae7100349
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-sdk.zip
+        sha256: e12e18292b2aab45517fffa63cc6e442259b9889f4cb7ac21c61e88f2f529942
         only-arches:
           - x86_64
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/23.0.1/openjfx-23.0.1_linux-aarch64_bin-sdk.zip
-        sha256: 53c947dd39183f8fbaeeaffc946e68f1fcbde9770e60986aad19350bf845b3d4
+        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-sdk.zip
+        sha256: d0e4b6888ecd150a94d9fa1975fada6f4357b28471ddd9d26cf25f7ef8956733
         only-arches:
           - aarch64
       - type: file
