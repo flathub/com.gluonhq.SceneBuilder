@@ -24,7 +24,8 @@ modules:
     buildsystem: simple
     build-commands:
       - mkdir -p deb-package
-      - ar p SceneBuilder.deb data.tar.zst | tar --use-compress-program=unzstd -xf - -C deb-package
+      - ar p SceneBuilder.deb data.tar.zst | tar --use-compress-program=unzstd -xf
+        - -C deb-package
       - install -Dm755 deb-package/opt/scenebuilder/lib/app/*.jar /app/lib/SceneBuilder.jar
       - install -Dm755 deb-package/opt/scenebuilder/lib/scenebuilder-SceneBuilder.desktop
         /app/lib/SceneBuilder.desktop
@@ -43,8 +44,8 @@ modules:
     sources:
       - type: file
         dest-filename: SceneBuilder.deb
-        url: https://github.com/gluonhq/scenebuilder/releases/download/24.0.0/SceneBuilder-24.0.0.deb
-        sha256: f56b484c99da30ceea4c07e112683c4fed30796bf3090cfecd7b3ab0bf7796fe
+        url: https://github.com/gluonhq/scenebuilder/releases/download/24.0.1-RC/SceneBuilder-24.0.1-RC.deb
+        sha256: 2291aafb8e32b90ec8e58dc0d6fa24b8d7bf336de79fbf408866a8f59c73afad
         x-checker-data:
           type: json
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
