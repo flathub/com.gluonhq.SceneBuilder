@@ -32,6 +32,9 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
   
   <releases>
+    <release date="2025-07-03" version="24.0.1">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/24.0.1</url>
+    </release>
     <release date="2025-03-27" version="24.0.0">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/24.0.0</url>
       <description>
