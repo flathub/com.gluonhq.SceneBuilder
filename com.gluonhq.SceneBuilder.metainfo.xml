@@ -137,5 +137,10 @@
     <category>Development</category>
     <category>Java</category>
   </categories>
+  <keywords>
+    <keyword>javafx ui designer</keyword>
+    <keyword>java desktop app builder</keyword>
+    <keyword>drag and drop ui design tool</keyword>
+  </keywords>
   
 </component>
