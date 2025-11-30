@@ -6,14 +6,14 @@
   <project_license>0BSD</project_license>
   <developer_name>Gluon HQ</developer_name>
   <content_rating type="oars-1.1"/>
-  
+
   <summary>Design JavaFX user interfaces</summary>
   <description>
     <p>Integrated: Scene Builder works with the JavaFX ecosystem - official controls, community projects, and Gluon offerings including Gluon Mobile, Gluon Desktop, and Gluon CloudLink.</p>
-    <p>Simple: Drag 'n' Drop user interface design allows for rapid iteration. Separation of design and logic files allows for team members to quickly and easily focus on their specific layer of application development.</p> 
+    <p>Simple: Drag 'n' Drop user interface design allows for rapid iteration. Separation of design and logic files allows for team members to quickly and easily focus on their specific layer of application development.</p>
     <p>Supported: Scene Builder is free and open source, but is backed by Gluon. Commercial support offerings are available, including training and custom consultancy services.</p>
   </description>
-  
+
   <screenshots>
     <screenshot type="default">
       <caption>Main window</caption>
@@ -22,16 +22,19 @@
     <screenshot>
       <caption>Welcome window</caption>
       <image>https://i2.wp.com/gluonhq.com/wp-content/uploads/2022/04/SB-welcome-dialog.png</image>
-    </screenshot> 
+    </screenshot>
   </screenshots>
-  
+
   <launchable type="desktop-id">com.gluonhq.SceneBuilder.desktop</launchable>
   <url type="homepage">https://gluonhq.com/products/scene-builder/</url>
   <url type="help">https://github.com/gluonhq/scenebuilder/wiki</url>
   <url type="bugtracker">https://github.com/gluonhq/scenebuilder/issues</url>
   <url type="donation">https://gluonhq.com/pricing/</url>
-  
+
   <releases>
+    <release date="2025-09-25" version="25.0.0">
+        <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/25.0.0</url>
+    </release>
     <release date="2025-07-03" version="24.0.1">
       <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/24.0.1</url>
     </release>
@@ -132,7 +135,7 @@
     </description>
     </release>
   </releases>
-  
+
   <categories>
     <category>Development</category>
     <category>Java</category>
@@ -142,5 +145,5 @@
     <keyword>java desktop app builder</keyword>
     <keyword>drag and drop ui design tool</keyword>
   </keywords>
-  
+
 </component>
