@@ -32,6 +32,14 @@
   <url type="donation">https://gluonhq.com/pricing/</url>
 
   <releases>
+  <release date="2026-04-17" version="26.0.0">
+      <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/26.0.0</url>
+      <description>
+        <ul>
+          <li>Use JavaFX 25</li>
+        </ul>
+      </description>
+  </release>
     <release date="2025-09-25" version="25.0.0">
         <url type="details">https://github.com/gluonhq/scenebuilder/releases/tag/25.0.0</url>
     </release>

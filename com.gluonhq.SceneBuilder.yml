@@ -54,14 +54,14 @@ modules:
             | .browser_download_url
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-x64_bin-sdk.zip
-        sha256: e12e18292b2aab45517fffa63cc6e442259b9889f4cb7ac21c61e88f2f529942
+        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-x64_bin-sdk.zip
+        sha256: a205615de1deb345bf5ca93da32dad23a5f535c9ff59661656b8cee6da469496
         only-arches:
           - x86_64
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/24.0.1/openjfx-24.0.1_linux-aarch64_bin-sdk.zip
-        sha256: d0e4b6888ecd150a94d9fa1975fada6f4357b28471ddd9d26cf25f7ef8956733
+        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-aarch64_bin-sdk.zip
+        sha256: 08415556b12bafce11e22f1ec35cb305f1d6b3a8eeef95b02b5b1007dd2f76e3
         only-arches:
           - aarch64
       - type: file
