@@ -30,6 +30,7 @@
   <url type="help">https://github.com/gluonhq/scenebuilder/wiki</url>
   <url type="bugtracker">https://github.com/gluonhq/scenebuilder/issues</url>
   <url type="donation">https://gluonhq.com/pricing/</url>
+  <url type="vcs-browser">https://github.com/gluonhq/scenebuilder</url>
 
   <releases>
   <release date="2026-04-17" version="26.0.0">
