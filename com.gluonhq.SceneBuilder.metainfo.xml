@@ -17,11 +17,15 @@
   <screenshots>
     <screenshot type="default">
       <caption>Main window</caption>
-      <image>https://gluonhq.com/wp-content/uploads/2016/03/scene-builder-in-action.jpg</image>
+      <image>https://upload.wikimedia.org/wikipedia/commons/6/6f/Scene_builder.png</image>
     </screenshot>
     <screenshot>
-      <caption>Welcome window</caption>
-      <image>https://i2.wp.com/gluonhq.com/wp-content/uploads/2022/04/SB-welcome-dialog.png</image>
+      <caption>Main window - blank</caption>
+      <image>https://raw.githubusercontent.com/gluonhq/scenebuilder/refs/heads/master/docs/images/librarymanager/SceneBuilder01.png</image>
+    </screenshot>
+    <screenshot>
+      <caption>Library Manager - importing custom controls from ControlsFX</caption>
+      <image>https://raw.githubusercontent.com/gluonhq/scenebuilder/refs/heads/master/docs/images/librarymanager/SceneBuilder09.png</image>
     </screenshot>
   </screenshots>
 
