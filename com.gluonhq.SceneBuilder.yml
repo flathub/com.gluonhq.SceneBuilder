@@ -43,8 +43,8 @@ modules:
     sources:
       - type: file
         dest-filename: SceneBuilder.deb
-        url: https://github.com/gluonhq/scenebuilder/releases/download/26.0.0/SceneBuilder-26.0.0.deb
-        sha256: d32e5e4382c720b907513926c2f5dd025bea4d76967d08560969aa81945bcbbc
+        url: https://github.com/gluonhq/scenebuilder/releases/download/27.0.0-RC/SceneBuilder-27.0.0-RC.deb
+        sha256: f8ca1890e9bf4b6011ee35b00ecc000dd410aa3b64893049fdd952ba0025a30e
         x-checker-data:
           type: json
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
