@@ -1,6 +1,6 @@
 app-id: com.gluonhq.SceneBuilder
 runtime: org.freedesktop.Platform
-runtime-version: '25.08'
+runtime-version: '26.08'
 sdk: org.freedesktop.Sdk
 sdk-extensions:
   - org.freedesktop.Sdk.Extension.openjdk
@@ -43,8 +43,8 @@ modules:
     sources:
       - type: file
         dest-filename: SceneBuilder.deb
-        url: https://github.com/gluonhq/scenebuilder/releases/download/26.0.0/SceneBuilder-26.0.0.deb
-        sha256: d32e5e4382c720b907513926c2f5dd025bea4d76967d08560969aa81945bcbbc
+        url: https://github.com/gluonhq/scenebuilder/releases/download/27.0.0/SceneBuilder-27.0.0.deb
+        sha256: bb61ec81ecea52fa21f300e1f6316f704c5bf853b1d44eec4c54659a8e6ae4f4
         x-checker-data:
           type: json
           url: https://api.github.com/repos/gluonhq/scenebuilder/releases/latest
@@ -54,14 +54,14 @@ modules:
             | .browser_download_url
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-x64_bin-sdk.zip
-        sha256: a205615de1deb345bf5ca93da32dad23a5f535c9ff59661656b8cee6da469496
+        url: https://download2.gluonhq.com/openjfx/27.0.1.1/openjfx-27.0.1.1_linux-x64_bin-sdk.zip
+        sha256: a5a9c196d9949355d0bee351b56783f33f9508a62dae086f8e92a910aa2aa290
         only-arches:
           - x86_64
       - type: file
         dest-filename: sdk.zip
-        url: https://download2.gluonhq.com/openjfx/25.0.1/openjfx-25.0.1_linux-aarch64_bin-sdk.zip
-        sha256: 08415556b12bafce11e22f1ec35cb305f1d6b3a8eeef95b02b5b1007dd2f76e3
+        url: https://download2.gluonhq.com/openjfx/27.0.1.1/openjfx-27.0.1.1_linux-aarch64_bin-sdk.zip
+        sha256: 62a892ba1a49b92285cf827212ef8e94801b953949b4fccf5e8cecf54ca06899
         only-arches:
           - aarch64
       - type: file
